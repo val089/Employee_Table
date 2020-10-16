@@ -1,0 +1,93 @@
+$bg-table: rgb(191, 235, 197);
+$font-table-color: #333;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    background: $bg-table;
+  }
+}
+
+.form-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .select-department {
+    border: none;
+    padding: 2px;
+    font-size: 15px;
+  }
+}
+
+.form-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .form-group {
+    padding: 10px;
+  }
+}
+
+.form {
+  margin: 40px;
+
+  .form-group {
+    padding: 10px;
+  }
+}
+
+.table-container {
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: $font-table-color;
+    overflow: hidden; //auto
+
+    table {
+      border-collapse: collapse;
+      width: 100.1%;
+    }
+
+      th {
+        position: sticky;
+        top: 0;
+        background: $bg-table;
+        padding: 10px 5px;
+        text-align: left;
+        border-bottom: 1px solid #999;
+      }
+
+      td {
+        padding: 10px 5px;
+        text-align: left;
+      }
+  }
+
+.select-in-table {
+  border: none;
+  background: $bg-table;
+  width: 100%;
+  font-size: 15px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie - Frontend Team - PARLETO</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <form class="form-search form">
+      <div class="form-group">
+        <label for="name">Wyszukaj pracownika:</label>
+        <input type="text" name="name" id="searchEmployee">
+      </div>
+      <div class="form-group">
+        <label for="">Pokaż działy:</label>
+        <select class="select-department" id="selectDep">
+          <option disabled selected value="all"> -- Wybierz dział -- </option>
+          <!-- departmentSelect() -->
+        </select>
+        <button class="btn" id="btnReset">RESET</button>
+      </div>
+      <div class="from-to-container">
+        <div class="form-group">
+          <p>Wynagrodzenie:</p>
+          <label for="from">Od</label>
+          <input type="number" name="from" id="salaryFrom" placeholder="Od" value="0">
+        </div>
+        <div  class="form-group">
+          <label for="to">Do</label>
+          <input type="number" name="to" id="salaryTo" placeholder="Do" value="5000">
+        </div>
+      </div>
+    </form>
+
+    <h4 class="form-title">Dodaj Pracownika:</h1>
+    <form class="form-add form">
+      <div class="form-group">
+        <label for="add-name">Imię:</label>
+        <input type="text" name="add-name" id="nameToAdd">
+      </div>
+      <div class="form-group">
+        <label for="add-surname">Nazwisko:</label>
+        <input type="text" name="add-surname" id="surnameToAdd">
+      </div>
+      <div class="form-group">
+        <label for="department">Dział:</label>
+        <input type="text" name="department" id="departmentToAdd">
+      </div>
+      <div class="form-group">
+        <label for="add-salary">Wynagrodzenie:</label>
+        <input type="number" name="add-salary" id="salaryToAdd">
+      </div>
+      <button class="btn" id="addBtn" type="submit">DODAJ PRACOWNIKA</button>
+    </form>
+
+
+    <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>IMIĘ</th> <th>NAZWISKO</th> <th>DZIAŁ</th> <th>WYNAGRODZENIE</th> <th>WALUTA</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- employeesTable() -->
+          </tbody>
+          <tr>
+            <th scope="row" colspan="3">
+              <label for="">Pokaż sumę działu:</label>
+              <select class="select-department select-in-table" id="selectDepSalary">
+                <option disabled selected value="all"> -- Wybierz dział -- </option>
+                <!-- departmentSelect() -->
+              </select>
+            </th>
+            <td class="departments-salary"></td>
+            <td>PLN</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="3">SUMA</th>
+            <td class="salary-sum">
+              <!-- showAllSalary() -->
+            </td>
+            <td>PLN</td>
+          </tr>
+        </table>
+      </div>
+      <script src="js/main.js"></script>
+</body>
+</html>

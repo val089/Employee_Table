@@ -1,0 +1,110 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.btn {
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #bfebc5;
+}
+
+.form-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-search .select-department {
+  border: none;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.form-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-add .form-group {
+  padding: 10px;
+}
+
+.form {
+  margin: 40px;
+}
+
+.form .form-group {
+  padding: 10px;
+}
+
+.table-container {
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #333;
+  overflow: hidden;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100.1%;
+}
+
+.table-container th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #bfebc5;
+  padding: 10px 5px;
+  text-align: left;
+  border-bottom: 1px solid #999;
+}
+
+.table-container td {
+  padding: 10px 5px;
+  text-align: left;
+}
+
+.select-in-table {
+  border: none;
+  background: #bfebc5;
+  width: 100%;
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */
